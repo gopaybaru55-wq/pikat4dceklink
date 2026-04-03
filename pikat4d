@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrustPositif Clone</title>
+
+  <link rel="shortcut icon" href="https://trustpositif.komdigi.go.id/assets/images/image2_ouC_icon.ico">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://trustpositif.komdigi.go.id/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://trustpositif.komdigi.go.id/assets/css/dataTables.bootstrap4.min.css">
+
+  <!-- CSS Kamu -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="container-fluid p-0">
+    <div class="top-small-nav text-center">
+      <img src="https://trustpositif.komdigi.go.id/assets/images/id.png" alt="flag">
+      TRUST+™ Positif, Internet Sehat dan Aman
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar1">
+      <a class="navbar-brand text-white" href="#" hidden>Trustpositif</a>
+
+      <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon-custom">
+          <img src="https://trustpositif.komdigi.go.id/assets/images/menu.png" alt="menu">
+          Menu
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mx-auto">
+          <li class="nav-item active">
+            <a id="beranda" class="nav-link" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://aduankonten.id/" target="_blank">Aduan Konten</a>
+          </li>
+          <li class="nav-item">
+            <a id="tentang" class="nav-link" href="#">Tentang Kami</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- MAIN -->
+  <div class="container body images-index py-4">
+
+    <!-- LOGO DESKTOP -->
+    <div class="col-sm-12 text-center logo d-none d-sm-block mb-4">
+      <img class="icon_kominfo img-fluid" src="https://trustpositif.komdigi.go.id/assets/images/komdigi.png" alt="komdigi">
+      <img class="icon_ais img-fluid" src="https://trustpositif.komdigi.go.id/assets/images/cyberdrone.jpeg" alt="cyberdrone">
+      <img class="icon_aduan img-fluid" src="https://trustpositif.komdigi.go.id/assets/images/aduan_.png" alt="aduan">
+    </div>
+
+    <!-- LOGO MOBILE -->
+    <div class="col-sm-12 text-center logo d-block d-sm-none mb-4">
+      <img class="icon_kominfo img-fluid mobile-logo-kominfo" src="https://trustpositif.komdigi.go.id/assets/images/komdigi.png" alt="komdigi">
+      <img class="icon_ais img-fluid mobile-logo-ais" src="https://trustpositif.komdigi.go.id/assets/images/cyberdrone.jpeg" alt="cyberdrone">
+      <img class="icon_aduan img-fluid mobile-logo-aduan" src="https://trustpositif.komdigi.go.id/assets/images/aduan_.png" alt="aduan">
+    </div>
+
+    <!-- TEXT -->
+    <div class="col-sm-12 keterangan">
+      <p>
+        Isilah Domain/URL/Keyword yang ingin Anda cari pada kolom isian di bawah, cukup 1 bagian kata saja,
+        misalkan: <strong>domainsaya.com</strong>. Kemudian klik <strong>CARI DATA</strong> untuk melakukan pencarian.
+      </p>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="col-sm-12 home-table">
+      <div class="input-group mb-3 input-group-lg">
+        <input type="text" class="form-control cari" placeholder="Cari Data Pemblokiran Trustpositif" id="press-to-modal" readonly>
+      </div>
+
+      <!-- LOADING -->
+      <span style="display: none" id="show_loading">
+        <div class="d-flex justify-content-center" id="spinloading">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </span>
+
+      <!-- TABLE -->
+      <div class="table-responsive">
+        <table id="daftar-block" class="table table-striped table-bordered shadow-sm">
+          <thead>
+            <tr>
+              <th>Domain/URL</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="show-result">
+            <tr>
+              <td>pikatcgk.com</td>
+              <td>Tidak Ada</td>
+            </tr>
+            <tr>
+              <td>pikatsodap.com</td>
+              <td>Tidak Ada</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="row mt-4">
+      <div class="col-sm-12 container-button">
+        <a class="btn-info-link" href="https://trustpositif.komdigi.go.id/normalisasi" target="_blank">
+          <button type="button" class="btn btn-success custom-green-btn">PENGAJUAN NORMALISASI</button>
+        </a>
+      </div>
+
+      <div class="col-sm-12 container-button">
+        <a class="btn-info-link" href="https://trustpositif.komdigi.go.id/pdfhoaks" target="_blank">
+          <button type="button" class="btn btn-info">
+            <img src="https://trustpositif.komdigi.go.id/assets/images/interface.png" alt="download">
+            Download Data Hoaks Terbaru
+          </button>
+        </a>
+      </div>
+
+      <div class="col-sm-12 container-button">
+        <a class="btn-info-link" href="https://trustpositif.komdigi.go.id/assets/db/domains" target="_blank">
+          <button type="button" class="btn btn-secondary">
+            <img src="https://trustpositif.komdigi.go.id/assets/images/data-transfer-download-3x.png" alt="download">
+            Download Blacklist TrustPositif
+          </button>
+        </a>
+      </div>
+
+      <div class="col-sm-12 text-center logo d-sm-block no_korupsi mt-4">
+        <img class="icon_ais img-fluid" src="https://trustpositif.komdigi.go.id/assets/images/No-Korupsi-01.png" alt="No Korupsi" style="max-width: 184px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="myModal-search" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- HEADER -->
+        <div class="modal-header">
+          <h4 class="modal-title" id="text-title">CARI DATA</h4>
+          <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- BODY -->
+        <div class="modal-body">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <textarea class="form-control inputarea" rows="6" id="input-data" placeholder="Contoh pencarian yang benar:
+namadomain.tld
+
+Maksimal pencarian 5 URL"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="text-footer1">CARI DATA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-copyright text-center py-4">
+        <div class="row">
+
+          <div class="col-md-5 mt-md-0 mt-3 sistem">
+            <div class="col-sm-12 footer-logo-box">
+              <img src="https://trustpositif.komdigi.go.id/assets/images/white_komdigi.png" alt="komdigi white">
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-md-0 mb-3 link">
+            <h5 class="footer-title">Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Beranda</a></li>
+              <li><a href="https://aduankonten.id/" target="_blank">Aduan Konten</a></li>
+              <li><a href="#">Tentang Kami</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-md-0 mb-3 kontak">
+            <h5 class="footer-title">Kontak</h5>
+            <ul class="list-unstyled">
+              <li>Telepon: +62 21 3845786</li>
+              <li><a href="mailto:aduankonten@komdigi.go.id">Email: aduankonten@komdigi.go.id</a></li>
+              <li>Jalan Medan Merdeka Barat No.9 Jakarta Pusat</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://trustpositif.komdigi.go.id/assets/js/jquery.min.js"></script>
+  <script src="https://trustpositif.komdigi.go.id/assets/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
